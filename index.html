@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            "use strict";
+            let arrF = [{
+                fullName:{
+                surname:'xxx',
+                firstName: 'yyy',
+                middleName: 'zzz',
+                }}, {fullName : { 
+                surname:'XXX',
+                firstName: 'YYY',
+                middleName: 'ZZZ',
+            }}];
+            let arrS= {
+                fullName:{
+                surname:true,
+                firstName: true,
+                middleName: false,
+            }}; //true,false
+
+            let arrT = {
+                fullName:{
+                    surname:'Прізвище',
+                    middleName:'По-батькові',
+            }}; //string
+            let result = [{
+                name:' ',
+                value1: ' ',
+                value2: ' ',
+            },{
+                name:' ',
+                value1: ' ',
+                value2: ' ',
+            }];
+
+        
+            console.log(arrF);
+          
+           for(let bool in arrS.fullName){
+               if(arrS.fullName[bool] == true){
+                //alert(arrS.fullName[bool]) true true
+                //  alert(bool); //surname firstname
+                    alert(arrT.fullName);
+               /* for(let i = 0; i < 3; i++){
+                       result[i].name = bool;
+                       console.log(result)                        
+                       }   */
+                       
+                    
+                        
+                    
+                  /* for(let check in arrT.fullName){
+                        alert(arrT.fullName[check])
+                        if(arrT.fullName[check] == ' '){
+                            //alert(arrT.fullName[check]);
+                    }
+
+
+                   }*/
+                   }
+               }
+                    /*if(arrT.fullName == ' '){
+                       alert(bool);
+                        result.name = bool;
+                    } else{
+                        for(let check in arrT.fullName){
+                        //alert(arrT.fullName[check]);
+                        result.name = arrT.fullName[check];
+                    }}*/
+            //}
+            //}
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+            console.log(arrS.fullName);
+
+            console.log(arrT);
+            console.log(result);
+            
+
+
+
+
+
+         /*   let name1 = arrT.fullName.surname;
+           result[0].name = name1;
+           let valueFirst = arrF[0].fullName.surname;
+           result[0].value1 = valueFirst;
+           let valueSecond = arrF[1].fullName.surname;
+           result[0].value2 = valueSecond;
+
+           let name2 = arr
+            console.log(result);*/
+        </script>
+    </body>
+    </html>
